@@ -1,0 +1,48 @@
+# --- Git LFS tracked binary assets ---
+
+# OrcaSlicer / Bambu / Prusa projects
+*.3mf filter=lfs diff=lfs merge=lfs -text
+
+# Meshes
+*.stl filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.amf filter=lfs diff=lfs merge=lfs -text
+
+# CAD files
+*.step filter=lfs diff=lfs merge=lfs -text
+*.stp  filter=lfs diff=lfs merge=lfs -text
+*.f3d  filter=lfs diff=lfs merge=lfs -text
+*.fcstd filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+
+# CNC / manufacturing
+*.iges filter=lfs diff=lfs merge=lfs -text
+*.igs  filter=lfs diff=lfs merge=lfs -text
+
+# Generated machine files
+*.gcode filter=lfs diff=lfs merge=lfs -text
+*.bgcode filter=lfs diff=lfs merge=lfs -text
+
+# Images / renders
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+
+# Archives
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z  filter=lfs diff=lfs merge=lfs -text
+
+# --- Text normalization ---
+
+# Source/config files should stay text
+*.md text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.ini text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.ps1 text eol=crlf

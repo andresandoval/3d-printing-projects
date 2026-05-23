@@ -1,0 +1,16 @@
+# OrcaSlicer cache/temp
+.cache/
+tmp/
+*.bak
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Generated previews
+*.thumb.png
+
+# Optional:
+# Ignore generated G-code entirely
+# *.gcode
+# *.bgcode
